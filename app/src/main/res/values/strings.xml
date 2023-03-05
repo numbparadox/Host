@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">H1</string>
+    <string name="upload">upload</string>
+    <string name="image">IMAGE</string>
 </resources>

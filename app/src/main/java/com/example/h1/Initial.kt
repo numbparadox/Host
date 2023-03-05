@@ -10,9 +10,12 @@ class Initial : AppCompatActivity() {
     private lateinit var binding: ActivityInitialBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityInitialBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val intent = Intent(this,UploadImage::class.java)
-        startActivity(intent)
+        binding.uploadinit.setOnClickListener {
+            val intent = Intent(this, UploadImage::class.java)
+            startActivity(intent)
+        }
     }
 }
